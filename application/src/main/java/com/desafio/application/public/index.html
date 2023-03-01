@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Site bootstrap</title>
+        <!--CSS-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body style="background-color:#f5fffe;">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#0004e2;" >
+        <a class="navbar-brand" href="#">
+            <img src="img\logo-nexum.png" width="80" height="30" alt="">
+          </a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="tabela.html">Cadastros<span class="sr-only">(current)</span></a>
+            </li>
+          </form>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+          <form id="form">
+              <div class="form-group">
+                  <label for="inserirNome">Nome Completo</label>
+                  <input type="nome" class="form-control" style="width: 600px" id="inserirNome" placeholder="Nome Completo">
+                </div>
+              
+              <div class="form-group">
+                <label for="inserirEmail">Inserir Email</label>
+                <input type="email" class="form-control" id="inserirEmail"  placeholder="Inserir email">
+              </div>
+  
+              <div class="form-group " >
+                  <label for="tipoPessoa">Tipo de pessoa</label>
+                  <select class="form-control" id="inserirTipoPessoa" name="campo">
+                      <option type="text" value="" selected>Selecione</option>
+                      <option type="text" id="PF" value="div1">Pessoa Física</option>
+                      <option type="text" id="PJ" value="div2">Pessoa Jurídica</option>
+                      <!--Problemas de input RESOLVER-->
+                    </select>
+              </div>
+              
+              <div class="form-group" id="pai">
+                <div id="div1">
+                  <label for="inserirCPF">CPF</label>
+                  <input class="form-control cpf-mask" id="inserirCPF" placeholder="000.000.000-00"> 
+                </div>
+                     
+                <div id="div2">
+                  <label for="inserirCPF">CNPJ</label>
+                  <input class="form-control" id="inserirCNPJ"  placeholder="00.000.000/0000-00">
+                </div>
+                  
+              </div>
+
+        <div class ="form-group">
+          <label for="cep">CEP</label>
+          <input type="cep" class="form-control" id="inserirCEP" placeholder="00000-000">
+          
+          <label for="endereco">Endereço</label>
+          <input type="endereco" class="form-control" id="inserirEndereco">
+          
+          <label for="complemento">Complemento</label>
+          <input type="complemento" class="form-control" id="inserirComplemento">
+          
+          <label for="bairro">Bairro</label>
+          <input type="bairro" class="form-control" id="inserirBairro">
+
+          <label for="cidade">Cidade</label>
+          <input type="cidade" class="form-control" id="inserirCidade">
+          
+          <label for="uf">UF</label>
+              <select class="form-control" id="inserirUf">
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+              </select>
+      </div>
+      
+      <button  id="btn">Cadastrar</button>
+          </div>
+        </div>
+      </div>
+        
+        
+        
+         
+        </form>
+        <footer>
+            <!--JS-->
+            <script src="js/jquery.js"></script>
+            
+            <script src="js/validaCep.js"></script>
+            <script src="js/mascaras.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+            
+            <script src="js/postarDados.js"></script>
+            
+            <script src="js/validaCPF_CNPJ.js"></script>
+            <script src="js/cpf_cnpj.js"></script>
+            
+            <script>src="js/bootstrap.bundle.min.js"</script>
+        </footer>
+    </body>
+</html>

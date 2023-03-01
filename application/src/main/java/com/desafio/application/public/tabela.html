@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dados Cadastrados</title>
+    <!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#f5fffe;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#0004e2;">
+        <a class="navbar-brand" href="#">
+            <img src="img\logo-nexum.png" width="80" height="30" alt="">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+                </li>
+        </div>
+    </nav>
+    <div class="post-list row">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" id="id">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Tipo da Pessoa</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">CNPJ</th>
+                    <th scope="col">CEP</th>
+                    <th scope="col">ENDEREÇO</th>
+                    <th scope="col">COMPLEMENTO</th>
+                    <th scope="col">BAIRRO</th>
+                    <th scope="col">CIDADE</th>
+                    <th scope="col">UF</th>
+                    <th scope="col">AÇÕES</th>
+
+                </tr>
+            </thead>
+            <tbody id="table-body" class="table">
+                <tr>
+                    <th id="id" class="value-id"></th>
+                    <td id="nome"></td>
+                    <td id="email"></td>
+                    <td id="tipoPessoa"></td>
+                    <td id="cpf"></td>
+                    <td id="cnpj"></td>
+                    <td id="cep"></td>
+                    <td id="endereco"></td>
+                    <td id="complemento"></td>
+                    <td id="bairro"></td>
+                    <td id="cidade"></td>
+                    <td id="uf"></td>
+
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/buscarDados.js"></script>
+    </footer>
+</body>
+
+</html>
